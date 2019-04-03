@@ -163,4 +163,8 @@ bar {
 bindsym $mod+shift+x exec i3lock -c 000000
 bindsym $mod+shift+g exec google-chrome
 bindsym $mod+shift+f exec firefox
+
+bindsym $mod+m exec amixer -q set Headphone 2dB+ unmute; exec amixer -q set Master 2dB+ unmute
+bindsym $mod+n exec amixer -q set Headphone 2dB- unmute; exec amixer -q set Master 2dB- unmute
+bindsym $mod+comma exec amixer -q set Master toggle; exec amixer -q set Headphone toggle
 bindsym $mod+p exec gnome-screenshot -i
